@@ -39,8 +39,6 @@ class CupertinoSettingsSection extends StatelessWidget {
 
     List<Widget> itemsWithDividers = [];
     for (int i = 0; i < items.length; i++) {
-      final leftPadding =
-          (items[i] as SettingsTile).leading == null ? 15.0 : 54.0;
       if (i < items.length - 1) {
         itemsWithDividers.add(items[i]);
       } else {
@@ -54,16 +52,6 @@ class CupertinoSettingsSection extends StatelessWidget {
           color: Theme.of(context).brightness == Brightness.light
               ? CupertinoColors.white
               : iosTileDarkColor,
-          border: Border(
-            top: const BorderSide(
-              color: borderColor,
-              width: 0.3,
-            ),
-            bottom: const BorderSide(
-              color: borderColor,
-              width: 0.3,
-            ),
-          ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
