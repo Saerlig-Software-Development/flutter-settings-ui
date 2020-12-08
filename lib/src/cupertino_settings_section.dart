@@ -43,10 +43,6 @@ class CupertinoSettingsSection extends StatelessWidget {
           (items[i] as SettingsTile).leading == null ? 15.0 : 54.0;
       if (i < items.length - 1) {
         itemsWithDividers.add(items[i]);
-        itemsWithDividers.add(Divider(
-          height: 0.3,
-          indent: leftPadding,
-        ));
       } else {
         itemsWithDividers.add(items[i]);
       }
